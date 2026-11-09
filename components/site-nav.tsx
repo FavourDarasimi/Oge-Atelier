@@ -84,11 +84,11 @@ export function SiteNav() {
     <>
       <div className="sticky top-0 z-40">
         <div
-          className={`overflow-hidden border-b border-hairline transition-colors duration-300 ${
+          className={`flex h-9 overflow-hidden border-b border-hairline transition-colors duration-300 ${
             scrolled ? "bg-paper" : "bg-transparent"
           }`}
         >
-          <div className="marquee-track flex w-max items-center py-2" aria-label="Made in Lagos — Worldwide delivery — Private appointments — Bespoke and Ready-to-Wear">
+          <div className="marquee-track flex h-9 w-max items-center" aria-label="Made in Lagos — Worldwide delivery — Private appointments — Bespoke and Ready-to-Wear">
             {[0, 1].map((half) => (
               <div key={half} className="flex items-center" aria-hidden={half === 1 ? true : undefined}>
                 {Array.from({ length: 3 }, () => MARQUEE_ITEMS).flat().map((item, index) => (

@@ -26,6 +26,20 @@
   --font-display: var(--font-display-face);
 }
 
+:root {
+  --nav-height: 100px;
+}
+
+@media (min-width: 768px) {
+  :root {
+    --nav-height: 116px;
+  }
+}
+
+html {
+  scroll-padding-top: var(--nav-height);
+}
+
 html,
 body {
   overflow-x: clip;
