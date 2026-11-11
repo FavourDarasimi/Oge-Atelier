@@ -154,18 +154,15 @@ export function SiteNav() {
             </button>
           </div>
 
-          <nav aria-label="Primary menu" className="flex-1 px-5 pt-2">
-            <ul>
+          <nav aria-label="Primary menu" className="flex flex-1 flex-col justify-center px-5">
+            <ul className="text-center">
               {NAV_LINKS.map((link, index) => (
                 <li key={link.label} className={index === NAV_LINKS.length - 1 ? "" : "border-b border-hairline"}>
                   <Link
                     href={link.href}
                     onClick={closeMenu}
-                    className="flex items-baseline gap-4 py-5 text-ink"
+                    className="flex items-center justify-center py-5 text-ink"
                   >
-                    <span aria-hidden="true" className="font-sans text-[11px] tracking-[0.18em] text-accent-text">
-                      0{index + 1}
-                    </span>
                     <span className="font-display text-4xl">{link.label}</span>
                   </Link>
                 </li>
