@@ -27,12 +27,12 @@
 }
 
 :root {
-  --nav-height: 100px;
+  --nav-height: 64px;
 }
 
 @media (min-width: 768px) {
   :root {
-    --nav-height: 116px;
+    --nav-height: 80px;
   }
 }
 
@@ -78,19 +78,6 @@ body {
   transform: scaleX(1);
 }
 
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
-
-.marquee-track {
-  animation: marquee 44s linear infinite;
-}
-
 @keyframes sheet-in {
   from {
     opacity: 0;
@@ -107,7 +94,6 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .marquee-track,
   .site-menu {
     animation: none;
   }
