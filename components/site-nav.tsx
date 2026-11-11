@@ -9,6 +9,7 @@ import Link from "next/link";
 import { HugeiconsIcon } from "@hugeicons/react";
 import { WhatsappIcon } from "@hugeicons/core-free-icons";
 import { useEffect, useRef, useState } from "react";
+import { waLink } from "@/lib/whatsapp";
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
@@ -18,7 +19,9 @@ const NAV_LINKS = [
   { label: "Contact", href: "/#contact" },
 ];
 
-const WHATSAPP_URL = "https://wa.me/2340000000000?text=Hello%20Oge%20Atelier%2C%20I%27d%20like%20to%20order%20a%20custom%20outfit.";
+const WHATSAPP_URL = waLink(
+  "Hello Oge Atelier, I'd like to order a custom outfit.",
+);
 const BOOK_URL = "/#contact";
 
 export function SiteNav() {
