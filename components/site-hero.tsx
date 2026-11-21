@@ -56,7 +56,7 @@ export function SiteHero() {
                   className="min-w-0 flex-1 lg:max-w-[220px] [transform:translateY(calc(var(--arc)*var(--n)*var(--n)))]"
                 >
                   <Link
-                    href="/#lookbook"
+                    href="/lookbook"
                     aria-label={`${collection.name} — view the collection`}
                     className="group block"
                   >

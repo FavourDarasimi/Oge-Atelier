@@ -106,7 +106,7 @@ export function CollectionsDeck() {
             >
               {position === 0 ? (
                 <Link
-                  href="/#lookbook"
+                  href="/lookbook"
                   aria-label={`${collection.name} — view the collection`}
                   className="group block h-full w-full"
                 >
