@@ -301,8 +301,8 @@ export function Wardrobe() {
   return (
     <MotionConfig reducedMotion="user">
       <div>
-        <div className="border-[1.5px] border-ink">
-          <div aria-hidden="true" className="h-4 border-b border-ink bg-paper" />
+        <div className="border border-hairline">
+          <div aria-hidden="true" className="h-4 border-b border-hairline bg-paper" />
           <div
             ref={stageRef}
             role="group"
@@ -313,7 +313,7 @@ export function Wardrobe() {
           >
             <div
               aria-hidden="true"
-              className="absolute inset-x-0 top-[44px] z-[1] h-[6px] bg-ink"
+              className="absolute inset-x-0 top-[44px] z-[1] h-[5px] bg-ink/80"
             />
 
             <div
@@ -396,7 +396,7 @@ export function Wardrobe() {
               aria-label="Previous look"
               onClick={() => move(-1)}
               whileTap={{ scale: 0.92 }}
-              className="absolute left-1.5 top-[calc(50%-24px)] z-20 grid h-12 w-12 place-items-center border-[1.5px] border-ink bg-paper text-ink transition-colors hover:bg-forest hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-accent md:left-3.5 md:top-[calc(50%-26px)] md:h-[52px] md:w-[52px]"
+              className="absolute left-1.5 top-[calc(50%-24px)] z-20 grid h-12 w-12 place-items-center border border-hairline bg-paper text-ink transition-colors hover:bg-forest hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-accent md:left-3.5 md:top-[calc(50%-26px)] md:h-[52px] md:w-[52px]"
             >
               <span aria-hidden="true" className="text-[22px] leading-none">
                 ‹
@@ -407,14 +407,14 @@ export function Wardrobe() {
               aria-label="Next look"
               onClick={() => move(1)}
               whileTap={{ scale: 0.92 }}
-              className="absolute right-1.5 top-[calc(50%-24px)] z-20 grid h-12 w-12 place-items-center border-[1.5px] border-ink bg-paper text-ink transition-colors hover:bg-forest hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-accent md:right-3.5 md:top-[calc(50%-26px)] md:h-[52px] md:w-[52px]"
+              className="absolute right-1.5 top-[calc(50%-24px)] z-20 grid h-12 w-12 place-items-center border border-hairline bg-paper text-ink transition-colors hover:bg-forest hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-[3px] focus-visible:outline-accent md:right-3.5 md:top-[calc(50%-26px)] md:h-[52px] md:w-[52px]"
             >
               <span aria-hidden="true" className="text-[22px] leading-none">
                 ›
               </span>
             </motion.button>
           </div>
-          <div aria-hidden="true" className="h-5 border-t border-ink bg-paper" />
+          <div aria-hidden="true" className="h-5 border-t border-hairline bg-paper" />
         </div>
 
         <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:items-baseline sm:justify-between">
